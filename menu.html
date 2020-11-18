@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<div class="w3-top " >
+  <div class="w3-row w3-padding clr">
+	<div class="w3-col s3">
+		<a href="Banking.php" class="w3-button w3-block"><img src= 
+			"05-digital-banking-logo.jpg"  width="70" height="60"
+				alt=""> 
+		</a>
+    </div>
+    
+    <div class="w3-col s3  ">
+      <a href="Banking.php#about" class="w3-button w3-block  btnn"><section id="about"></section><b>ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="customers.php" class="w3-button w3-block  btnn">CUSTOMERS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="payment.php" class="w3-button w3-block  btnn">TRANSACTIONS</a></b>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>
